@@ -2,6 +2,8 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
+import '../mainScreens/main_screen.dart';
+
 class MySplashScreen extends StatefulWidget {
   const MySplashScreen({Key? key}) : super(key: key);
 
@@ -15,7 +17,7 @@ class _MySplashScreenState extends State<MySplashScreen> {
   {
     Timer(const Duration(seconds: 3), () async {
       //send user to home screen
-      Navigator.push(context, MaterialPageRoute(builder: (c)=> MainScreen()));
+      Navigator.push(context, MaterialPageRoute(builder: (c)=> const MainScreen()));
     });
   }
   @override
@@ -26,22 +28,26 @@ class _MySplashScreenState extends State<MySplashScreen> {
   }
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.black,
-      child: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-        Image.asset("images/logo1.png"),
-          const Text(
-              "A Reactify App",
-              style: TextStyle(
-                fontSize: 20,
-                color: Colors.white,
-                fontWeight: FontWeight.bold
-              ),
+    return Material(
+      child: Container(
+        color: Colors.black,
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+          Image.asset("images/logo1.png"),
+
+            const SizedBox(height: 10,),
+            const Text(
+                "A Reactify App",
+                style: TextStyle(
+                  fontSize: 20,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold
+                ),
+            ),
+          ],
           ),
-        ],
         ),
       ),
     );

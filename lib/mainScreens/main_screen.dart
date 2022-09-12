@@ -8,12 +8,14 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
+  TabController? tabController;
+  int selectedIndex = 0
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Hello, universe"),
-      ),
+     body: TabBarView(
+       physics: NeverScrollableScrollPhysics(),
+     ),
     );
   }
 }
