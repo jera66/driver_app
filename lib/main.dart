@@ -9,7 +9,7 @@ void main()  async {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: Scaffold(appBar: AppBar(title: Text("Welcome to the driver app"),),),
+        // home: Scaffold(appBar: AppBar(title: Text("Welcome to the driver app"),),),
         debugShowCheckedModeBanner: false,
       )
     )

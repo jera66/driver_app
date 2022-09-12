@@ -32,7 +32,15 @@ class _MySplashScreenState extends State<MySplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
         children: [
-        Image.asset(name)
+        Image.asset("images/logo1.png"),
+          const Text(
+              "A Reactify App",
+              style: TextStyle(
+                fontSize: 20,
+                color: Colors.white,
+                fontWeight: FontWeight.bold
+              ),
+          ),
         ],
         ),
       ),
