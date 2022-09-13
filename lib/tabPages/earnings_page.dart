@@ -10,7 +10,7 @@ class Earnings extends StatefulWidget {
 class _EarningsState extends State<Earnings> {
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return const Center(
       child: Text(
           "Earnings"
       ),
