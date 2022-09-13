@@ -7,7 +7,7 @@ void main()  async {
       child: MaterialApp(
         title: 'Driver App',
         theme: ThemeData(
-          primarySwatch: Colors.blue,
+          primarySwatch: Colors.grey,
         ),
         // home: Scaffold(appBar: AppBar(title: Text("Welcome to the driver app"),),),
         debugShowCheckedModeBanner: false,
@@ -19,7 +19,7 @@ void main()  async {
 class MyApp extends StatefulWidget {
   final Widget? child;
 
-  MyApp({this.child});
+  const MyApp({super.key, this.child});
 
   static void restartApp(BuildContext context)
   {
